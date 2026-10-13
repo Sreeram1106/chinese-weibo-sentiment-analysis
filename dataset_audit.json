@@ -1,0 +1,7 @@
+{
+  "raw_rows": 21173,
+  "after_empty_removal": 21172,
+  "conflicting_label_texts_dropped": 86,
+  "after_dedup_rows": 10565,
+  "duplicate_share_removed": 0.501
+}

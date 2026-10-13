@@ -1,0 +1,3 @@
+variant,val_accuracy,val_macro_f1
+emoticons kept (ours),0.6985328916232845,0.6945955703835077
+emoticons deleted (original cleaning),0.6601987695220066,0.6601954088682935

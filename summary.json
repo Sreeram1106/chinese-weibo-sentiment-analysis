@@ -1,0 +1,101 @@
+{
+  "selected_model": "LinearSVC C=0.3 | char",
+  "data_audit": {
+    "raw_rows": 21173,
+    "after_empty_removal": 21172,
+    "conflicting_label_texts_dropped": 86,
+    "after_dedup_rows": 10565,
+    "duplicate_share_removed": 0.501
+  },
+  "split_sizes": {
+    "train": 6339,
+    "validation": 2113,
+    "test": 2113
+  },
+  "validation": {
+    "validation_accuracy": 0.6985328916232845,
+    "validation_macro_f1": 0.6945955703835077
+  },
+  "test": {
+    "accuracy": 0.6867013724562234,
+    "macro_f1": 0.6721042887321709,
+    "accuracy_ci95": [
+      0.6677591102697586,
+      0.7061050638902036
+    ],
+    "macro_f1_ci95": [
+      0.6496798299260818,
+      0.6928979079323127
+    ]
+  },
+  "cv5_macro_f1_train_plus_val": {
+    "mean": 0.6833836424720545,
+    "std": 0.015817018950976793
+  },
+  "majority_baseline_val_accuracy": 0.28253667770941787,
+  "covid_keyword_check": {
+    "n_covid_keyword_test_rows": 127,
+    "n_other_test_rows": 1986,
+    "covid_keyword_subset": {
+      "accuracy": 0.7952755905511811,
+      "macro_f1": 0.679974197804332
+    },
+    "class_counts_covid_subset": {
+      "0": 25,
+      "1": 1,
+      "2": 23,
+      "4": 55,
+      "5": 17,
+      "6": 6
+    },
+    "other_subset": {
+      "accuracy": 0.6797583081570997,
+      "macro_f1": 0.6510193368031694
+    },
+    "caveat": "Keyword screen only; small subset; not a validated COVID/vaccination test set."
+  },
+  "most_common_confusions": [
+    {
+      "true": "1: disgust",
+      "predicted": "6: anger",
+      "count": 55
+    },
+    {
+      "true": "6: anger",
+      "predicted": "1: disgust",
+      "count": 54
+    },
+    {
+      "true": "5: sadness",
+      "predicted": "2: happiness",
+      "count": 46
+    },
+    {
+      "true": "2: happiness",
+      "predicted": "5: sadness",
+      "count": 39
+    },
+    {
+      "true": "3: surprise",
+      "predicted": "2: happiness",
+      "count": 37
+    },
+    {
+      "true": "1: disgust",
+      "predicted": "5: sadness",
+      "count": 35
+    },
+    {
+      "true": "3: surprise",
+      "predicted": "6: anger",
+      "count": 33
+    },
+    {
+      "true": "5: sadness",
+      "predicted": "6: anger",
+      "count": 31
+    }
+  ],
+  "label_names_verified": false,
+  "note": "Metrics are on a de-duplicated, mixed-topic Chinese Weibo corpus; they are NOT COVID-vaccination-specific."
+}

@@ -1,0 +1,5 @@
+model,protocol,test_accuracy,test_macro_f1,test_rows_also_in_train,acc_on_leaked_rows,acc_on_unseen_rows
+"original-style (word TF-IDF + LR, emoticons deleted)",original split (with duplicates),0.7851,0.7781,0.5672,0.9192,0.6094
+"original-style (word TF-IDF + LR, emoticons deleted)",clean split (de-duplicated),0.5892,0.588,0.0,,
+"improved (char TF-IDF + LinearSVC, emoticons kept)",original split (with duplicates),0.8494,0.8413,0.5672,0.9675,0.6945
+"improved (char TF-IDF + LinearSVC, emoticons kept)",clean split (de-duplicated),0.6872,0.6729,0.0,,

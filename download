@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# NOTE: models/ and results/ are committed on purpose so the demo works right after cloning.
